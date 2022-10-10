@@ -18,6 +18,7 @@ int main() {
     
     //Create and Initialise 
     ComplexNumber_C q = {1.0, 1.0};
+    ComplexNumber_C y = {0.0, 0.0};
 
     // TASK:
     // Create another complex number y
@@ -25,5 +26,10 @@ int main() {
     // Use printf to display as a complex number (hint: you need two placeholders)
     
     while (true) {
+    y = {p.real + q.real, p.imag + q.imag};
+    int Resultreal = y.real, Resultimag = y.imag;
+    printf("real component %d\n", Resultreal);
+    printf("imaginary component %d\n", Resultimag);
+    wait_us(1000000);
     }
 }
