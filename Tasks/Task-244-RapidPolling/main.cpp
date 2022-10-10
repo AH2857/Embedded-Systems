@@ -100,7 +100,8 @@ int main()
         }
 
         // LED
-        if (tm >= 250ms) {
+        microseconds tt = 90ms + (count+1)*10ms; //added in solution
+        if (tm >= tt) { //tt is 250 in original
             greenLED = !greenLED;
             tmr.reset();
         }
